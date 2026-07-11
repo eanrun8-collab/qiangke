@@ -8,29 +8,22 @@ from datetime import datetime
 
 # 1. 你的任务列表
 TARGET_LIST = [
-    # "333765",  # 任务1: 周二 智能网络安全
-    # "333134",  # 任务2: 周四 习近平新时代中国特色社会主义思想概论
-    # "334603",  # 任务3: 周一 信息系统项目管理
-    # "341109",    #摄影基础：从入门到创作(面授) 姚钦棣
-    # "341074"    #中西文化漫谈与对比（面授）
-    # "341457",   #周一下午人工智能导论
-    # "341458",
-    # "343110",#周六ts
-    # "341456"    #冲突的人工智能
-    "359701"     #赵齐342913
+    "373612",
+    "371579",
 ]
+
 
 # 2. 【新增】定时启动时间 (格式: '年-月-日 时:分:秒')
 #    如果留空字符串 (如 START_TIME_STR = ""），则会和以前一样，等待你手动按回车开始。
 #    当前时间是 2025-07-11 12:13，我将示例时间设置为几分钟后，方便你测试。
-START_TIME_STR = "2026-5-01 08:59:50"  # <--- 修改为你抢课的精确开始时间
+START_TIME_STR = "2026-7-12 08:29:50"  # <--- 修改为你抢课的精确开始时间
 #START_TIME_STR = "2025-08-29 13:30:20"
 # 3. 执行抢课操作的 POST URL
-GRAB_ACTION_URL = "https://jwxt.sias.edu.cn/eams/stdElectCourse!batchOperator.action?profileId=1989"
-KEEP_ALIVE_URL = "https://jwxt.sias.edu.cn/eams/stdElectCourse!defaultPage.action?electionProfile.id=1989"
+GRAB_ACTION_URL = "https://jwxt.sias.edu.cn/eams/stdElectCourse!batchOperator.action?profileId=2011"
+KEEP_ALIVE_URL = "https://jwxt.sias.edu.cn/eams/stdElectCourse!defaultPage.action?electionProfile.id=2011"
 
 # 4. 你的有效 Cookie
-COOKIE = "semester.id=282; JSESSIONID=75D287E2AA777AEBE3F8CB94ABF58CD2; srv_id=srv6; GSESSIONID=75D287E2AA777AEBE3F8CB94ABF58CD2; JSESSIONID=6C1CCC4FB85A109A0B50D60A7C63122F"
+COOKIE = "semester.id=322; JSESSIONID=B3D877BE11FFDA041C625ED0C9FD8698; srv_id=srv1; GSESSIONID=99E677FB6ABF0A746DEC2F9F304E5743; JSESSIONID=6C1CCC4FB85A109A0B50D60A7C63122F"
 # 5. Cookie保活间隔（秒）
 KEEP_ALIVE_INTERVAL = 30  # 每30秒发送一次保活请求
 
